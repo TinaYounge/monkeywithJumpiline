@@ -39,8 +39,8 @@ ctx.stroke();
 ctx.closePath();
 // move the ball
 // 1. create the draw function
-var paddleHeight = 50,
-  paddleWidth = 300,
+var paddleHeight = 27,
+  paddleWidth = 400,
   paddleX = (canvas.width - paddleWidth) / 2;
 
 var dx = 2;
