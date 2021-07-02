@@ -61,7 +61,7 @@ function draw() {
     dx = -dx;
   }
   dotX += dx;
-  dotY += (dotX - 300) * 0.0009 * dy;
+  dotY += (dotX - 200) * 0.00076 * dy;
   drawPaddle();
   drawScore();
   if (rightPressed) {
@@ -86,6 +86,11 @@ function draw() {
       document.location.reload();
       clearInterval(interval);
     }
+  }
+  if (dotY < 0) {
+    alert("MONKEY GO TO HAVEN");
+    document.location.reload();
+    clearInterval(interval);
   }
   collisionDetection();
 }
