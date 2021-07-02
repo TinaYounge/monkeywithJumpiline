@@ -45,7 +45,7 @@ var paddleHeight = 27,
 
 var dx = 2;
 var dy = paddleHeight / 2;
-var ballRadius = 20;
+var ballRadius = 70;
 
 function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
